@@ -91,10 +91,25 @@ You should see:
 - Route created in `routingdb.routes`
 - Logs in **orchestrator-service** indicating order is ready for delivery
 
-## Notes
+## Why this project (Picnic-aligned)
 
-- This is intentionally minimal but **fully functional** and can be extended with:
-  - Resilience4j
-  - Prometheus / Grafana
-  - Kubernetes & Helm
-  - Authentication (Keycloak)
+This project is intentionally designed to mirror the kind of backend systems Picnic builds:
+
+- **Event-driven architecture** using Kafka topics to drive order → inventory → routing → orchestration
+- **Java 21 + Spring Boot 3 + WebFlux**, matching Picnic’s modern Java stack
+- **Microservices** split by responsibility: order, inventory, routing, saga/orchestrator
+- **Polyglot persistence** using PostgreSQL (transactional data) and MongoDB (routing data)
+- **Cloud-native ready** with Docker Compose and a clear path to Kubernetes/Helm and AWS
+
+## How it maps to Picnic’s domain
+
+| This project service   | Picnic-like responsibility                                  |
+|------------------------|------------------------------------------------------------|
+| `order-service`        | Customer order intake, validation, persistence             |
+| `inventory-service`    | Warehouse stock reservation and consistency                |
+| `routing-service`      | Delivery route generation & ETA logic                      |
+| `orchestrator-service` | End-to-end flow orchestration and status propagation       |
+
+The goal is to demonstrate my experience with **distributed systems, event-driven design,
+and modern Java backend practices** in a way that is directly relevant to Picnic’s platform.
+
