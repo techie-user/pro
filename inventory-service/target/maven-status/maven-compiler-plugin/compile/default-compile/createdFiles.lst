@@ -1,0 +1,4 @@
+com\shabeer\inventory\domain\InventoryItem.class
+com\shabeer\inventory\domain\InventoryRepository.class
+com\shabeer\inventory\service\InventoryListener.class
+com\shabeer\inventory\InventoryServiceApplication.class

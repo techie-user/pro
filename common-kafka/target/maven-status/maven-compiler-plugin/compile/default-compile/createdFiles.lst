@@ -1,0 +1,6 @@
+com\shabeer\common\kafka\config\KafkaCommonConfig.class
+com\shabeer\common\kafka\dto\OrderCreatedEvent$LineItem.class
+com\shabeer\common\kafka\dto\RouteCreatedEvent.class
+com\shabeer\common\kafka\dto\OrderCreatedEvent.class
+com\shabeer\common\kafka\dto\InventoryReservedEvent.class
+com\shabeer\common\kafka\TopicNames.class

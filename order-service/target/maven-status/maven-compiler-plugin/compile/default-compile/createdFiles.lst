@@ -1,0 +1,9 @@
+com\shabeer\order\domain\OrderEntity.class
+com\shabeer\order\OrderServiceApplication.class
+com\shabeer\order\domain\OrderRepository.class
+com\shabeer\order\domain\OrderItemEmbeddable.class
+com\shabeer\order\web\OrderController.class
+com\shabeer\order\web\OrderDto.class
+com\shabeer\order\service\OrderService.class
+com\shabeer\order\web\OrderController$CreateOrderResponse.class
+com\shabeer\order\web\OrderDto$LineItem.class
